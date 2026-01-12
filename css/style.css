@@ -1,0 +1,81 @@
+/* Page layout */
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(white, pink);
+    display: grid;
+    place-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Heading */
+h1 {
+    color: rgb(75, 75, 134);
+    margin-bottom:0px;
+    text-align: center;
+}
+ 
+.chat-container{
+width: 320px;
+height: 500px;
+background: linear-gradient( rgb(110, 77, 110),palevioletred);
+display: flex;
+flex-direction: column;
+padding: 15px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+box-shadow: 0 10px 10px rgba(10, 5, 5, 0.2);
+}
+
+#chatbox{
+    flex: 1;
+    background-color: rgb(238, 233, 233);
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.message{
+   padding: 8px 13px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgb(41, 22, 22);
+    font-size: 14px;
+    max-width: 80%;
+
+}
+.user {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    text-align: right;
+}
+/* Bot message */
+.bot {
+    background-color: #eeeeee;
+    align-self: flex-start;
+}
+ .input-area{
+    display: flex;
+    gap: 10px;
+ }
+ input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+ }
+ button{
+    border-radius: 10px;
+    border: none;
+    background-color: #eeeeee;
+    font-weight: bold;
+    padding:  5px 10px;
+    cursor: pointer;
+ }
+ button:hover {
+    background-color:rgb(110, 81, 110);
+    color: rgb(49, 49, 94);
+}
